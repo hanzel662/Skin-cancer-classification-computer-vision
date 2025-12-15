@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/raw/
+data/database/
+*.csv
+*.zip
+
+# Model
+*.h5
+*.pt
+*.pth
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+
