@@ -15,12 +15,6 @@ data/database/
 *.csv
 *.zip
 
-# Model
-*.h5
-*.pt
-*.pth
-*.joblib
-
 # OS
 .DS_Store
 Thumbs.db
@@ -28,5 +22,3 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-
