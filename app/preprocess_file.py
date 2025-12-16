@@ -44,7 +44,7 @@ def segment_otsu(img_rgb):
     b_channel = img_rgb[:, :, 2]
     h, w = b_channel.shape
     center = (w // 2, h // 2)
-    radius = int(min(h, w) * 0.8 / 2) # Keep inner 90%
+    radius = int(min(h, w) * 0.8 / 2) 
     circular_mask = np.zeros_like(b_channel, dtype=np.uint8)
     cv2.circle(circular_mask, center, radius, 255, -1)
     b_channel_masked = b_channel.copy()
