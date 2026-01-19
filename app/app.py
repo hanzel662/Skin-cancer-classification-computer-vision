@@ -41,17 +41,13 @@ if "mask" not in st.session_state:
 if uploaded is not None:
     col1, col2 = st.columns(2)
 
-    # -------------------------------
     # Display uploaded image
-    # -------------------------------
     with col1:
         image = Image.open(uploaded).convert("RGB")
         st.subheader("Uploaded Image")
         st.image(image)
 
-    # -------------------------------
     # Process & predict
-    # -------------------------------
     with col2:
         st.subheader("Analysis")
 
