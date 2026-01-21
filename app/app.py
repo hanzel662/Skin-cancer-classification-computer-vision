@@ -6,7 +6,6 @@ import os
 
 from preprocess_file import (
     dullrazor,
-    denoise,
     normalize_color,
     segment_otsu,
     extract_features
@@ -58,7 +57,6 @@ if uploaded is not None:
 
                 # Preprocessing
                 img = dullrazor(img)
-                img = denoise(img)
                 img = normalize_color(img)
                 mask = segment_otsu(img)
 

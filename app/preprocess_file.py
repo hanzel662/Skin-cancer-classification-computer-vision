@@ -28,9 +28,6 @@ def dullrazor(img_rgb):
     _, mask = cv2.threshold(blackhat, 10, 255, cv2.THRESH_BINARY)
     img_inpaint = cv2.inpaint(img_rgb, mask, 3, cv2.INPAINT_TELEA)
     return img_inpaint
-
-def denoise(img_rgb):
-    return cv2.fastNlMeansDenoisingColored(img_rgb, None, 3, 3, 7, 21)
     
 def normalize_color(img_rgb):
     img_lab = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2LAB)
