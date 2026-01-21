@@ -34,7 +34,7 @@ Metrics:
   `pip install -r requirements.txt`
 * Run the application:
   `streamlit run app.py`
-* Application should have opened automatically.
+* Application should have opened automatically in your web browser.
 
 ## 💯 Results
 Training logs, plots, and saved models are stored in `output/`
